@@ -1,0 +1,226 @@
+/* Import custom fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Neonderthaw&display=swap');
+
+/* Color Palette Used:
+#000000 (black);
+#14212D (dark blue);
+#FCA311 (yellow);
+#E5E5E5 (light gray);
+#FFFFFF (white);
+*/
+
+/* This is a custom class to change the color of the NavBar...it overrides the Bootstrap built-in style */
+#navbarNav{
+    font-weight: 750;
+    overflow: hidden;
+    background-color: rgb(29, 28, 28);
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 12;
+}
+
+.nav-link {
+  cursor: pointer !important;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgba(255, 255, 255, 0.808);
+    color: black !important;
+  }
+
+/* Background color for every page, default font for every page, default font color for every page */
+body {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* Custom font & font color for h1 elements, center alignment for text, text resize (and override of h1 default), top padding (for cushion away from NavBar) */
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 72px !important;
+  padding-top: 50px;
+  padding-bottom: 25px;
+
+}
+
+/* Custom font & font color for h2 elements, center alignment for text, text resize (and override of h2 default), top padding (for cushion from other elements), text underline feature */
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 36px !important;
+  padding-top: 16px;
+}
+
+.input-field {
+  display: block;
+  height: 80% !important;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-field input[type="text"],
+.input-field input[type="number"],
+.input-field input[type="email"],
+.input-field textarea {
+  padding: 10px;
+  border: 4px solid #ccc;
+  border-radius: 8px !important; 
+  width: 10vh;
+  height: 30px;
+  font-size: 16px;
+}
+
+.input-field input[type="date"] {
+  padding: 10px;
+  border: 4px solid #ccc;
+  border-radius: 8px !important; 
+  width: 150px;
+  height: 30px;
+  font-size: 16px;
+}
+
+/* Style for the submit button */
+.submit-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: rgb(65, 63, 63);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  }
+
+.submit-btn:hover {
+  background-color: rgba(164, 162, 162, 0.509);
+}
+
+#center{
+  text-align: center;
+  align-self: center;
+  font-weight: 350;
+  color: white;
+}
+
+h3{
+  text-align: center;
+}
+
+#question{
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+/* Text color for all links on page */
+a {
+  color: black;
+}
+
+/* To increase the size of the form box for user rationale */
+#details {
+  height: 150px;
+}
+
+.charts{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700;
+}
+
+.carousel {
+  max-width: 30vw;
+  display: inline-block;
+  text-align: center;
+}
+
+.accordion {
+  max-width: 100vw;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.accordion-body{
+  background-color: lightgray
+}
+
+.accordion-header{
+  background-color: rgb(43, 40, 40);
+  color: white!important;
+}
+
+.accordion-button{
+  background-color: rgb(43, 40, 40)!important;
+  color: white!important;
+  font-weight: 500;
+}
+
+.loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+  animation: tempAnimation 3s forwards;
+}
+
+@keyframes tempAnimation {
+  0% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.loading-page.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader {
+  border: 10px solid white;
+  border-top: 10px solid navy;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: fill 3s linear infinite;
+}
+
+@keyframes fill {
+  0% { transform: rotate(0deg); }
+  50% { border-top: 10px solid transparent; }
+  100% { transform: rotate(360deg); border-top: 10px solid darkblue; }
+}
